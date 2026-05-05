@@ -3,7 +3,9 @@ public class Player extends Person {
     int number;
     int goals;
     int matchplayed;
-    public static Player[] allplayers=new Player[25];
+    static int currentRow = 1;
+    static String[][] med = new String[6][12];
+
     public Player(String name,String position, int number, int goals, int matchplayed) {
         super(name);
         this.position = position;
